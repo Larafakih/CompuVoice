@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="calcButtonTextSize">30dp</dimen>
+    <dimen name="calcButtonSize">70dp</dimen>
+    <dimen name="calcMargBtm">10dp</dimen>
+</resources>

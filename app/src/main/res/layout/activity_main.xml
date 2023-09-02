@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/calcMargBtm"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/workingsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:hint="Tap to type "
+            android:isScrollContainer="true"
+            android:paddingRight="30dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_gravity="end"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:isScrollContainer="true"
+            android:paddingRight="30dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            tools:ignore="RtlCompat" />
+        <!--   android:background="@color/orange" -->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/micOrCalcBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="200dp"
+            android:gravity="start"
+            android:onClick="viewCalculator"
+            android:visibility="visible"
+            app:backgroundTint="#978A8A"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/micOrCalcBtn2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+
+            android:gravity="end"
+            android:onClick="viewCalculator2"
+            android:visibility="invisible"
+            app:backgroundTint="#978A8A"
+            app:iconTint="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>
